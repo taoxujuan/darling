@@ -1,0 +1,466 @@
+.da-search {
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+/*---------------------搜索框-----------------------*/
+.da-search .search-link {
+    height: 40px;
+    line-height: 40px;
+    margin: 10px 0;
+}
+.da-search .search-link li {
+    float: left;
+    padding-right: 14px;
+}
+.da-search .search-link li a {
+    display: inline-block;
+    margin-right: 14px;
+}
+.ico-home {
+    background-image: url(../images/ico.png)!important;
+    width: 20px;
+    height: 14px;
+    background-position: 0 -45px;
+}
+.ico-home, .share-btn .icon-share {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -2px;
+}
+.icon-to {
+    background: url(../images/ico_arrow.png) -64px -85px no-repeat;
+    vertical-align: middle;
+    display: inline-block;
+    width: 7px;
+    height: 21px;
+}
+.da-search .search-link li .sort {
+    border: 1px solid #ccc;
+    padding: 0 24px 0 2px;
+    height: 23px;
+    margin-top: 8px;
+    line-height: 23px;
+    position: relative;
+    z-index: 2;
+}
+.da-search .search-link li .sort .ico-sort-ar {
+    right: 6px;
+}
+.da-search .ico-sort-ar {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.da-search .ico-sort-ar .down, .da-search .ico-sort-ar .up {
+    height: 0;
+    line-height: 0;
+    width: 0;
+    border-style: solid;
+    border-width: 6px 3px;
+}
+.da-search .search-link li .sort .ico-sort-ar .up {
+    margin-top: -4px;
+}
+.da-search .ico-sort-ar .down {
+    display: block;
+    border-color: #c2c2c2 transparent transparent;
+    vertical-align: bottom;
+    margin-top: 6px;
+}
+.da-search .ico-sort-ar .up {
+    border-color: transparent transparent #c2c2c2;
+    display: block;
+    vertical-align: top;
+    margin-top: 4px;
+}
+.da-search .search-link li .sort .drop {
+    border: 1px solid #ccc;
+    position: absolute;
+    top: 23px;
+    left: -1px;
+    background-color: #fff;
+    display: none;
+}
+.da-search .search-link li .sort .drop li {
+    float: none;
+    padding-left: 8px;
+    padding-right: 24px;
+    white-space: nowrap;
+}
+.da-search .search-link .search-input {
+    padding: 0 3px;
+    width: 140px;
+    height: 23px;
+    line-height: 23px;
+    border: 0;
+    outline: none;
+}
+.da-search .search-link li .sort .ico-search {
+    position: absolute;
+    right: 6px;
+    top: 6px;
+    width: 13px;
+    height: 12px;
+    border: 0;
+}
+.ico-search {
+    background: url(../images/ico-sort.png) -38px top no-repeat;
+    vertical-align: middle;
+    display: inline-block;
+}
+/*-------------------------condition 选择部分------------*/
+.da-search .condition {
+    border: 1px solid #ccc;
+    padding: 18px 20px 20px;
+}
+.da-search .condition li {
+    position: relative;
+}
+.da-search .condition dt {
+    float: left;
+    width: 70px;
+    font-weight: 700;
+    padding: 8px 0 10px;
+}
+.da-search .condition .single-select {
+    height: 24px;
+    overflow: hidden;
+}
+.da-search .condition dd {
+    float: left;
+    width: 840px;
+    line-height: 14px;
+    padding-bottom: 10px;
+}
+.da-search .condition .select-inner {
+    height: auto;
+}
+.clearfix{
+	zoom:1;
+}
+.da-search .condition dd .item {
+    float: left;
+    margin: 10px 20px 0 0;
+    display: block;
+    width: 100px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.da-search .condition li .mul-select {
+    display: none;
+    border:1px solid #ccc;
+}
+.da-search .condition li label, .da-search .sortbar .stock label, .da-sidebar .close, .da-sidebar .sidebar-btn, .regtip-close {
+    cursor: pointer;
+}
+.da-search .condition dd input {
+    vertical-align: middle;
+    width: 14px;
+    height: 14px;
+    margin-right: 8px;
+/*    display: none;*/
+    float: left;
+}
+input[type=checkbox], input[type=radio] {
+    box-sizing: border-box;
+    padding: 0;
+}
+/*.da-search .condition dd .select-function, .da-search .condition li.select .single-select{
+	display: none;
+}*/
+.mul-select .select-function {
+    clear: both;
+    text-align: center;
+    padding-top: 14px;
+    padding-bottom: 10px;
+    display: block;
+
+}
+.mul-select .select-function button {
+    width: 68px;
+    height: 22px;
+    line-height: 16px;
+    margin-right: 36px;
+    outline: none;
+}
+button {
+    overflow: visible;
+    background-color: #e14958;
+    border: 1px solid #e14958;
+    color: #fff;
+    display: inline-block;
+    padding: 0;
+    align-items: center;
+}
+
+.da-search .condition li .option {
+    position: absolute;
+    right: 0;
+    top: 2px;
+}
+.da-search .condition li .option a {
+    width: 58px;
+    height: 24px;
+    line-height: 24px;
+    border: 1px solid #ccc;
+    display: inline-block;
+}
+.da-search .condition li .option a .ico-add {
+    padding: 0 9px;
+    vertical-align: middle;
+    margin-top: -6px;
+    display: inline-block;
+}
+.da-search .condition li .option a .ico-r-4-7 {
+    border-color: transparent transparent transparent #ccc;
+    border-width: 4px 7px;
+    margin: -2px 3px 0 10px;
+}
+.da-search .condition li .option a .ico-d-4-7, .da-search .condition li .option a .ico-r-4-7 {
+    display: inline-block;
+    vertical-align: middle;
+    height: 0;
+    line-height: 0;
+    width: 0;
+    border-style: solid;
+}
+/*-----------------------排序-------------------------*/
+.da-search .sortbar {
+    background-color: #fbfbfb;
+    border: 1px solid #ccc;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 15px;
+    margin-top: 20px;
+    position: relative;
+}
+.pr10 {
+    padding-right: 10px;
+}
+.da-search .sortinner a.current {
+    color: #e14958;
+}
+.da-search .sortinner a {
+    display: inline-block;
+    position: relative;
+    padding-right: 10px;
+    margin-right: 20px;
+}
+.ico-sort, .ico-sort-d {
+    vertical-align: middle;
+    background: url(../images/ico-sort.png) left top no-repeat;
+}
+.ico-sort-dr {
+    background-position: -11px top;
+}
+.ico-sort-d {
+    width: 9px;
+    height: 12px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 13px;
+}
+.da-search .ico-sort-ar {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.da-search .ico-sort-ar .down1, .da-search .ico-sort-ar .up1 {
+    height: 0;
+    line-height: 0;
+    width: 0;
+    border-style: solid;
+    border-width: 6px 3px;
+}
+.da-search .ico-sort-ar .up1 {
+    border-color: transparent transparent #c2c2c2;
+    display: block;
+    vertical-align: top;
+    margin-top: 4px;
+}
+.da-search .ico-sort-ar .up1.current {
+    border-color: transparent transparent #e14958;
+}
+.da-search .ico-sort-ar .down1 {
+    display: block;
+    border-color: #c2c2c2 transparent transparent;
+    vertical-align: bottom;
+    margin-top: 6px;
+}
+.da-search .ico-sort-ar .down1.current {
+    border-color: #e14958 transparent transparent;
+}
+.da-search .sortbar .stock {
+    padding-right: 44px;
+}
+.da-search .sortbar .stock input {
+    vertical-align: middle;
+    width: 14px;
+    height: 14px;
+    margin-top: -4px;
+    margin-right: 3px;
+}
+.da-search .sortpage {
+    position: absolute;
+    top: 0;
+    right: 8px;
+}
+.da-search .sortpage .p28 {
+    padding-right: 28px;
+}
+.da-search .sortpage .line {
+    margin: 0 2px;
+}
+.rede1 {
+    color: #e14958;
+}
+.da-search .sortpage .mr22 {
+    margin-right: 22px;
+}
+/*---------------------searchlist商品列表-----------------*/
+.da-search .searchlist {
+    margin-left: -20px;
+    margin-top: 20px;
+}
+.da-search .searchlist li {
+    width: 283px;
+    height: 398px;
+    border: 1px solid #e5e5e5;
+    margin-left: 20px;
+    float: left;
+    margin-bottom: 20px;
+}
+.da-search .searchlist li:hover{
+	box-shadow: 0 0 10px #d5d2d2;
+}
+.da-search .searchlist li .search-img {
+    width: 283px;
+    height: 268px;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+.da-search .searchlist li .search-img {
+    width: 283px;
+    height: 268px;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+.da-search .searchlist li .search-img img{
+	width: 283px;
+    height: 268px;
+}
+.cover-img {
+    background-position: center center;
+    background-size: cover;
+}
+.da-search .searchlist li .search-img .sign {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    background: 0 0;
+    margin-right: 0;
+    text-align: right;
+}
+
+.da-search .searchlist li .search-img .option {
+    width: 283px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    background-color: #895ca5;
+    opacity: .8;
+    filter: alpha(opacity=80);
+    display: none;
+}
+.da-search .searchlist li .search-img .option .ico-g-cart {
+    background-position: left -88px;
+    width: 18px;
+    margin-top: -5px;
+}
+.da-search .searchlist li .search-img .option .ico-g-cart, .da-search .searchlist li .search-img .option .ico-g-notice {
+    background-image: url(../images/ico.png)!important;
+    display: inline-block;
+    height: 16px;
+    vertical-align: middle;
+    margin-left: 7px;
+}
+.da-search .searchlist li .data {
+    padding: 8px 26px 0;
+}
+.da-search .searchlist li .data .price {
+    padding-bottom: 8px;
+}
+.da-search .searchlist li .data .price .now-price {
+    color: #e34755;
+    font-size: 20px;
+    padding-right: 4px;
+    margin-left: 3px;
+}
+.da-search .searchlist li .data .price .old-price, .sidebar-collect .old-price {
+    text-decoration: line-through;
+}
+.da-search .searchlist li .data .title {
+    overflow: hidden;
+    height: 38px;
+    line-height: 18px;
+    color: #666;
+}
+.da-search .searchlist li .data .title .discount {
+    color: #e34755;
+}
+.da-search .searchlist li .data .function {
+    padding-top: 8px;
+    font-size: 12px;
+    color: #999;
+}
+.da-search .searchlist li .data .function .line {
+    padding: 0 6px;
+}
+/*-----------------底部切换页面----------------*/
+.pagination .page {
+    float: right;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.pagination .page a {
+    cursor: pointer;
+}
+.pagination .page .next, .pagination .page .prev {
+    float: left;
+    width: 48px;
+     text-align: center;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #e5e5e5;
+    margin-left: 10px;
+}
+.pagination .page a, .pagination .page span {
+    float: left;
+    width: 28px;
+    text-align: center;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #e5e5e5;
+    margin-left: 5px;
+    margin-right:5px;
+}
+.pagination .page span .current {
+    background-color: #e5e5e5!important;
+    color: #fff;
+    cursor: default;
+}
+.pagination .page a:hover {
+    background-color: #f6f6f6;
+}

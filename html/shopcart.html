@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车页面</title>
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/shopcart.css" />
+	</head>
+
+	<body>
+		<!-- 头部 -->
+		<div class="da-header">
+			<div class="da-header-inner">
+				<a href="">消费者告知书</a>
+				<div class="da-header-user">
+					<div class="da-reg-tip">
+						<a class="regtip-close"></a>
+					</div>
+					<a href="login.html" class="da-login">登录</a>
+					<span class="line">|</span>
+					<a href="login.html" class="da-register">注册</a>
+					<span>
+					<span class="line">|</span>
+					<span class="ico-phone"></span> 400-080-1888
+					</span>
+					<span class="line">|</span>
+					<a href="javascript:;" class="d-da">
+						下载达令app
+						<div class="da-code">
+							<span class="arrow-7-5"></span>
+							<span class="pic-code"></span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!--版心-->
+		<div class="da-cart ready">
+			<!--logo-->
+			<div class="cart-top clearfix">
+				<a class="logo" href="/"></a>
+				<div class="cart-step clearfix">
+					<ul>
+						<ul>
+							<li class="step-1 current">
+								<span class="triangle"></span>
+								<span class="icon-number">1</span> 查看购物车
+							</li>
+							<li class="step-2">
+								<span class="triangle"></span>
+								<span class="icon-number">2</span> 确认订单信息
+								<span class="icon-to"></span>
+							</li>
+							<li class="step-3">
+								<span class="triangle"></span>
+								<span class="icon-number">3</span> 成功提交订单
+							</li>
+						</ul>
+					</ul>
+				</div>
+			</div>
+			<!--订单列表头-->
+			<div class="cart-table empty">
+				<div class="cart-thead clearfix">
+					<ul>
+						<li class="th th-check">
+							<label>
+								<input type="checkbox" class="check allcheck"/>全选
+							</label>
+						</li>
+						<li class="th th-name">商品名称</li>
+						<li class="th th-price">单价(元)</li>
+						<li class="th th-number">数量</li>
+						<li class="th th-total">小计(元)</li>
+						<li class="th th-handle">操作</li>
+					</ul>
+				</div>
+				<!--购物车为空-->
+				<table cellpadding="0" cellspacing="0" class="data-empty">
+					<tbody>
+						<tr>
+							<td align="center" valign="middle">
+								<strong></strong>
+								<span>购物车空空的哦~，去看看心仪的商品吧~<br>
+                    				<a href="index.html">去购物&gt;</a>
+                    			</span>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<!--购物车不为空-->
+				<!--闪购-->
+				<div class="cart-list">
+				</div>
+			</div>
+			<!--总计-->
+			<div>
+				<div class="total-box clearfix" style="margin-top:0px;">
+					<label class="sel-all">
+						<input type="checkbox" class="check allcheck allcheck1"/>全选
+					</label>
+					<div class="option">
+						<a href="javascript:;">删除选中的商品</a>
+						<a href="javascript:;">移到我的收藏</a>
+					</div>
+					<div class="toolbar clearfix">
+						<a href="#" class="btn-count">去结算</a>
+						<div class="total-count">
+							<p>
+								<span class="item">总金额：</span>
+								<span class="sumprice rede1">
+									￥
+									<span class="f20">0.00</span>
+								</span>
+							</p>
+							<p>
+								<span class="item">已节省：</span> -￥
+								<span>0.00</span>
+							</p>
+						</div>
+						<div class="ammount">
+							已选中
+							<span class="rede1">0</span> 件商品
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--我的收藏-->
+			<div class="cart-collection">
+				<div class="title">
+					<p>我的收藏</p>
+				</div>
+				<!--没有收藏时-->
+				<table cellpadding="0" cellspacing="0" class="data-empty1" style="display: none;">
+					<tbody>
+						<tr>
+							<td>您还没有收藏任何商品，快去寻找心仪的全球好货吧~</td>
+						</tr>
+						<tr align="center">
+							<td>
+								<a href="/">去购物</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<!--有收藏商品时-->
+				<div class="c-box">
+					<a href="javascript:;" class="arrow btn-pre"></a>
+					<a href="javascript:;" class="arrow btn-next"></a>
+					<div class="c-list">
+						<ul class="clearfix">
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- footer 尾部 -->
+		<div class="da-footer">
+			<div class="da-assure">
+				<ul class="clearfix">
+					<li>为什么选择达令<span class="ico-arrow"></span></li>
+					<li><span class="assure-1"></span>100多个品牌授权</li>
+					<li><span class="assure-2"></span>24小时内发货</li>
+					<li><span class="assure-3"></span>保税区正品</li>
+				</ul>
+			</div>
+			<div class="da-investor clearfix">
+				<dl class="first">
+					<dt>投资人说达令</dt>
+					<dd>“hi，达令，我是鹿晗，达令投资人，投资比影响力更重要的是责任。”</dd>
+				</dl>
+				<dl class="second">
+					<dt>投资人说达令</dt>
+					<dd>“达令™一手全球好货--带您购全球,教您神马值得买。<br> 连续两年荣获App store 编辑推荐最佳购物类应用！”
+					</dd>
+				</dl>
+			</div>
+			<div class="da-copyright">
+				<p class="f14">
+					<a href="/" target="_blank">首页</a> │
+					<a href="" target="_blank">网站地图</a> │
+					<a href="" target="_blank">消费者告知书</a> │
+					<a href="" target="_blank">优惠券使用规则</a> │
+					<a href="" target="_blank">退换货使用说明</a> │
+					<a href="" target="_blank">关于我们</a> │
+					<a href="" target="_blank">联系我们</a>
+				</p>
+				<table cellpadding="0" cellspacing="0" class="f14">
+					<tbody>
+						<tr>
+							<td align="right" width="170">北京普缇客科技有限公司&nbsp;</td>
+							<td align="left">&nbsp;
+								<a id="___szfw_logo___" href="" target="_blank">
+									<img src="../images/foot1.png" border="0"></a>
+								<span style="display:inline-block;position:relative;width:auto;">
+                    		<a href="" id="kx_verify" style="display:inline-block;">
+                    		<img src="../images/foot2.png" style="border:none;"></a>
+                    		</span>
+								<span></span>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="f14">Copyright © 2016达令 ，All Rights Reserved │ 京ICP备14009583号-1 │ 京公网安备11010502027399 | 食品流通许可证编号：SP1101051510323113 </p>
+			</div>
+		</div>
+		<!--删除弹出框-->
+		<div class="da-dialog da-dialog-prompt" style="display:none">
+			<div class="da-dialog-inner" style="margin-left: -164px; margin-top:-81px ;">
+				<a class="close" href="javascript:;"></a>
+				<p class="message">确定删除商品？</p>
+				<div class="buttons">
+					<button data-btn-cancel="" class="cancel">保留商品</button>
+					<button data-btn-confirm="" class="confirm">确定删除</button>
+				</div>
+			</div>
+			<div class="mask"></div>
+		</div>
+		<script type="text/javascript" src="../js/jquery-1.12.4.js" ></script>
+		<script type="text/javascript" src="../js/jquery.cookie.js" ></script>
+		<script type="text/javascript" src="../js/strOper.js" ></script>
+		<script type="text/javascript" src="../js/common.js" ></script>
+		<script type="text/javascript" src="../js/shopcart.js" ></script>
+	</body>
+
+</html>

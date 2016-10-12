@@ -1,0 +1,537 @@
+html {
+    font-family: "Helvetica Neue","Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+    font-size: 12px;
+/*    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;*/
+    color: #666;
+}
+a, address, b, big, blockquote, body, center, cite, code, dd, del, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, label, legend, li, ol, p, pre, small, span, strong, u, ul, var {
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: #666;
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+ol{
+    list-style: none;
+}
+/*----------------------头部-----------------------------------*/
+.da-header {
+    width: auto;
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #dadada;
+    margin-bottom: 30px;
+    z-index: 5;
+}
+.da-header-inner {
+    width: 1200px;
+    margin: auto;
+    height: 30px;
+}
+.da-header-inner>a {
+    float: left;
+    line-height: 30px;
+}
+.da-header-user {
+    position: absolute;
+    right: 60px;
+    display: inline-block;
+    line-height: 32px;
+}
+.da-reg-tip {
+    background: #6a4084;
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    z-index: 2;
+    padding: 0 5px;
+    top: 25px;
+    border-radius: 3px;
+    left: 40px;
+    color: #fff;
+}
+.da-reg-tip:before {
+    content: "注册即得 新人专享优惠券";
+}
+.regtip-close {
+    height: 18px;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 4px;
+}
+.regtip-close:before {
+    color: #fff;
+    content: "×";
+}
+.regtip-close:after {
+    content: "";
+    font-size: 0;
+    position: absolute;
+    left: 12px;
+    top: -5px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid #6a4084;
+}
+.da-header-user .line {
+    padding: 0 6px;
+}
+.ico-phone {
+    background-position: -26px -151px;
+    width: 13px;
+    height: 13px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+.d-da {
+    position: relative;
+}
+.da-code {
+    border: 1px solid #ececec;
+    background-color: #e5e5e5;
+    padding: 15px;
+    width: 91px;
+    right: -30px;
+    top: 28px;
+    display: none;
+    z-index: 20;
+}
+.arrow-7-5, .da-code, .da-tooltip-text, .login-sign {
+    position: absolute;
+}
+.arrow-7-5 {
+    border-width: 7px 5px;
+    border-style: solid;
+    border-color: transparent transparent #e5e5e5;
+    right: 54px;
+    top: -14px;
+}
+.pic-code {
+    background: url(../images/cod_da.png) no-repeat;
+    width: 91px;
+    height: 91px;
+    display: block;
+}
+.da-header-inner>a:hover, .da-header-user a:hover {
+    color: #e14958;
+}
+form .ctrl{
+	position: relative;
+}
+.clearfix {
+    zoom: 1;
+}
+.ico-password, .ico-user {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 19px;
+    margin: 10px 0 0 10px;
+}
+.ico-user {
+    background: url(../images/ico-login.png) -29px 0 no-repeat;
+}
+.ico-password {
+    background: url(../images/ico-login.png) -29px -27px no-repeat;
+}
+.clearfix:after {
+    content: " ";
+    display: block;
+    clear: both;
+    height: 0;
+}
+/*--------------------banner 搜索框部分----------------------------*/
+.da-banner {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 4;
+}
+.logo {
+    float: left;
+    width: 280px;
+    height: 60px;
+    background: url(../images/logo.png) no-repeat;
+}
+.promo {
+    width: 120px;
+    height: 100px;
+    float: left;
+    margin-left: 20px;
+    margin-top: -20px;
+}
+.da-banner form {
+    padding-right: 40px;
+}
+.da-header-cart {
+    width: 168px;
+    height: 38px;
+    border: 1px solid #dadada;
+    border-radius: 2px;
+    float: right;
+    background: url(../images/da-header-cart-bg.jpg) 15px 7px no-repeat #f2f2f2;
+    position: relative;
+}
+.da-header-cart a {
+    line-height: 38px;
+    text-indent: 60px;
+    font-weight: 700;
+    font-size: 14px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: .8;
+    filter: alpha(opacity=80);
+    background: url(../images/da-header-cart-bg2.png) 150px 13px no-repeat;
+}
+.da-header-cart span {
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    top: -5px;
+    right: 21px;
+    color: #fff;
+    font-size: 12px;
+    background: url(../images/da-header-cart-bg1.png) no-repeat;
+}
+.da-header-cart a:hover {
+    color: #e14958;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    text-decoration: none;
+}
+.da-header-search {
+    float: right;
+    width: 394px;
+    position: relative;
+    margin-right: 70px;
+}
+.da-header-search .s-keyword {
+    width: 301px;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 5px;
+    border: 1px solid #6b4185;
+    position: absolute;
+    right: 81px;
+    outline: 0;
+}
+.da-header-search button {
+    width: 81px;
+    height: 38px;
+    border: 1px solid #6b4185;
+    line-height: 38px;
+    background-color: #6b4185;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    font-size: 16px;
+    color: #fff;
+}
+.da-header-search .search-hot {
+    margin-top: 45px;
+    margin-bottom: 24px;
+    height: 18px;
+    overflow: hidden;
+}
+a:hover {
+    text-decoration: underline;
+}
+.da-header-search .search-hot a:hover {
+    color: #e14958;
+}
+/*----------------------导航nav--------------------------*/
+.da-nav {
+    width: 100%;
+    min-width: 1200px;
+    background-color: #333;
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+    z-index: 3;
+}
+.da-nav-bar{
+	width: 1200px;
+	margin: 0 auto;
+}
+.da-category {
+    float: left;
+    font-size: 16px;
+    width: 220px;
+    background-color: #654579;
+    position: relative;
+    z-index: 100;
+    cursor: pointer;
+}
+.da-navigation {
+    font-size: 16px;
+    overflow: hidden;
+    padding-left: 30px;
+}
+.da-navigation li {
+    float: left;
+    padding: 0 10px;
+    margin-right: 37px;
+}
+.da-navigation li a {
+    color: #fff;
+}
+.da-navigation li a:hover{
+    color: #e5e5e5;
+    text-decoration: none;
+}
+.da-category .dt-title {
+    text-align: center;
+    color: #fff;
+}
+.da-category .dd {
+    background-color: #e8e3eb;
+    width: 220px;
+    position: absolute;
+    color: #666;
+/*    display: none;*/
+    height: 479px;
+}
+.da-category .ico-down {
+    background: url(../images/ico_arrow.png) -5px -120px no-repeat;
+    /*display: none;*/
+}
+.da-category .ico-down, .da-category .ico-up {
+    vertical-align: middle;
+    width: 11px;
+    height: 7px;
+    margin-left: 13px;
+}
+.da-category .ico-up {
+    background: url(../images/ico_arrow.png) -25px -120px no-repeat;
+    display: inline-block;
+}
+/*--------侧边栏--------*/
+
+.da-category dl {
+    padding: 25px 20px 0;
+    border: 1px solid #e8e3eb;
+    height: 93px;
+}
+.da-category dl:hover {
+    background-color: #fff;
+    border: 1px solid #654579;
+    border-right-color: #fff;
+    width: 179px;
+}
+.da-category dt {
+    font-size: 14px;
+    line-height: 16px;
+    padding-bottom: 16px;
+}
+.da-category .ico-category img {
+    width: 18px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-top: -4px;
+}
+.da-category .category-sort {
+    line-height: 22px;
+    height: 43px;
+    position: relative;
+    padding-right: 12px;
+    padding-bottom: 14px;
+    border-bottom: 1px dotted #d9d9d9;
+    width: 168px;
+}
+.da-category .ico-arrow-2-4 {
+    border-width: 2px 4px;
+    border-style: solid;
+    border-color: transparent transparent transparent #9e9e9e;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 22px;
+}
+.da-category .category-sort-box {
+    height: 44px;
+    overflow: hidden;
+    font-size: 12px;
+}
+.da-category .category-sort a {
+    white-space: nowrap;
+    margin-right: 6px;
+    display: inline-block;
+}
+.da-nav-bar a:hover{
+	color: #e14958;
+}
+/*侧边栏隐藏部分*/
+.da-category .category-drop {
+    width: 600px;
+    min-height: 443px;
+    overflow: hidden;
+    position: absolute;
+    left: 220px;
+    top: 0;
+    background-color: #fff;
+    padding: 20px 40px 15px;
+    display: none;
+    border: 1px solid #654579;
+}
+.da-category .hot-brand {
+    padding-bottom: 40px;
+}
+.da-category .hot-brand-title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 40px;
+}
+.da-category .hot-brand-box {
+    margin-left: -13px;
+}
+.da-category .brand-img {
+    float: left;
+    width: 140px;
+    height: 70px;
+    margin-left: 13px;
+}
+.cover-img {
+    background-position: center center;
+    background-size: cover;
+}
+.da-category .hot-brand-box a{
+	margin-right:0px; 
+}
+.da-category .category-data {
+    overflow: hidden;
+}
+.da-category .brand-ad, .da-category .brand-img-1 {
+    float: right;
+    width: 293px;
+    height: 270px;
+}
+.da-category .category-data-1 {
+    overflow: hidden;
+    font-size: 12px;
+}
+.da-category .category-data-2 {
+    margin-bottom: 20px;
+}
+.da-category .item {
+    float: left;
+    width: 80px;
+    height: 22px;
+    line-height: 22px;
+    font-weight: 700;
+}
+.da-category .data {
+    overflow: hidden;
+    width: 208px;
+    line-height: 22px;
+}
+.da-category .data a {
+	display: inline-block;
+    margin-right: 20px;
+    white-space: nowrap;
+}
+
+/*------------------footer尾部---------------------*/
+.da-assure {
+    background-color: #fff;
+    height: 79px;
+    line-height: 79px;
+    border-bottom: solid 1px #e0e0e0;
+    box-shadow: 0 2px 2px #e0e0e0;
+    border-top: solid 1px #d8d8d8;
+}
+.da-assure ul{
+    width: 960px;
+    margin: 0 auto;
+}
+.da-assure li:first-child {
+    margin-left: 0;
+}
+.da-assure li {
+    float: left;
+    margin-left: 130px;
+    font-size: 14px;
+}
+.da-assure .ico-arrow {
+    background-position: -2px -135px;
+    width: 22px;
+    height: 41px;
+    margin-left: 50px;
+}
+.ico-arrow {
+    background: url(../images/ico_arrow.png) no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+}
+.da-assure .assure-1, .da-assure .assure-2, .da-assure .assure-3, .da-assure .ico-assure {
+    vertical-align: middle;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 7px;
+}
+.da-assure .assure-1, .da-assure .ico-assure {
+    background: url(../images/ico-assure.png) no-repeat;
+}
+.da-assure .assure-2 {
+    background: url(../images/ico-assure.png) -36px 0 no-repeat;
+}
+.da-assure .assure-3 {
+    background: url(../images/ico-assure.png) -73px 0 no-repeat;
+}
+.da-investor {
+    width: 1110px;
+    margin: 0 auto;
+    padding: 24px 0 40px 42px;
+    border-bottom: solid 1px #d8d8d8;
+}
+.da-investor .first {
+    width: 660px;
+    float: left;
+}
+.da-investor dt {
+    font-size: 18px;
+    line-height: 40px;
+}
+.da-investor dd {
+    font-size: 14px;
+    line-height: 20px;
+}
+.da-investor .second {
+    overflow: hidden;
+}
+.da-copyright {
+    text-align: center;
+    padding-bottom: 20px;
+}
+.da-copyright p {
+    padding: 20px 0 0;
+}
+.da-copyright table {
+    margin: 20px auto 0;
+    width: 530px;
+}
+.go-top{
+	width: 70px;
+	height: 70px;
+	background:#000 url(../images/gotop.png);
+	opacity: .7;
+	position: fixed;
+	right: 0;
+	top:600px;
+	z-index: 100;
+	border-radius: 70px;
+	display: none;
+}

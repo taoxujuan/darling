@@ -1,0 +1,574 @@
+.da-cart {
+    width: 1020px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+/*-----------------logo部分*/
+.da-cart .logo {
+    float: left;
+    width: 280px;
+    margin-right: 20px;
+    height: 40px;
+}
+.da-cart .cart-step {
+    border: 1px solid #e5e5e5;
+    height: 38px;
+    width: 615px;
+    float: right;
+    margin-top: 10px;
+}
+.da-cart .cart-step li.step-1.c-pre, .da-cart .cart-step li.step-1.current {
+    left: -1px;
+    top: -1px;
+}
+.da-cart .cart-step li.current {
+    color: #fff;
+    background-color: #f25e5a;
+    z-index: 1;
+    top: -1px;
+    left: -1px;
+}
+.da-cart .cart-step li {
+    color: #cacaca;
+    height: 40px;
+    font-size: 14px;
+    line-height: 40px;
+    float: left;
+    width: 205px;
+    position: relative;
+}
+.da-cart .cart-step li.current .triangle {
+    display: block;
+    border-color: transparent transparent transparent #f25e5a;
+}
+.da-cart .cart-step li .triangle {
+    border-width: 20px 11px;
+    border-style: solid;
+    position: absolute;
+    right: -22px;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    top: 0;
+    display: none;
+}
+.da-cart .cart-step li.current .icon-number {
+    background-color: #fff;
+    color: #f25e5a;
+}
+.da-cart .icon-number {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 50%;
+    margin: 0 10px 0 52px;
+    font-family: arial;
+    font-weight: 700;
+    background-color: #e5e5e5;
+    color: #fff;
+}
+.da-cart .cart-step li .icon-to {
+    position: absolute;
+    left: auto;
+    right: 0;
+    top: 10px;
+}
+.icon-to {
+    background: url(../images/ico_arrow.png) -64px -85px no-repeat;
+    vertical-align: middle;
+    display: inline-block;
+    width: 7px;
+    height: 21px;
+}
+/*--------订单列表头*/
+.da-cart .cart-table {
+    padding-top: 60px;
+}
+.da-cart .cart-thead {
+    border: 1px solid #ccc;
+    height: 38px;
+    line-height: 38px;
+}
+.da-cart .cart-thead li.th-check {
+    width: 100px;
+    text-align: left;
+}
+.da-cart .cart-thead li.th {
+    text-align: center;
+}
+.da-cart .cart-table li {
+    float: left;
+}
+.da-cart .cart-thead li.th-check input {
+    margin-left: 18px;
+    margin-right: 16px;
+}
+input[type=checkbox], input[type=radio] {
+    box-sizing: border-box;
+    padding: 0;
+}
+.check {
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+    margin-right: 3px;
+    margin-top: -3px;
+}
+.da-cart .cart-thead li.th-name {
+    width: 440px;
+}
+.da-cart .cart-thead li.th-price {
+    width: 120px;
+}
+.da-cart .cart-thead li.th-number {
+    width: 116px;
+}
+.da-cart .cart-thead li.th-total {
+    width: 128px;
+}
+.da-cart .cart-thead li.th-handle {
+    overflow: hidden;
+    float: none;
+}
+/*购物车为空*/
+.da-cart .cart-table .data-empty {
+    width: auto;
+    height: 160px;
+    margin: 0 auto 50px;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+.da-cart .cart-table .data-empty td {
+    padding-top: 100px;
+}
+.da-cart .cart-table .data-empty td strong {
+    display: block;
+    width: 80px;
+    height: 71px;
+    background: url(../images/ico-cart-empty.png) no-repeat;
+    float: left;
+    margin-right: 30px;
+}
+.da-cart .cart-table .data-empty td span {
+    display: block;
+    padding-top: 16px;
+    height: 100px;
+    float: left;
+    font-size: 14px;
+}
+.da-cart .cart-table .data-empty td span a {
+    font-size: 12px;
+    color: #384f61;
+    float: left;
+    margin-top: 10px;
+}
+.da-cart .cart-table .data-empty td span a:hover{
+	color: #e14958;
+}
+
+
+/*--------购物车不为空-----*/
+.da-cart .cart-list {
+    margin-top: 20px;
+    border: 1px solid #e5e5e5;
+    padding-bottom: 20px;
+}
+.da-cart .cart-list .thead {
+    border-bottom: solid 1px #e5e5e5;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 18px;
+}
+.da-cart .cart-list .thead .ico-active {
+    margin: 0 12px 0 20px;
+}
+.ico-active {
+    padding: 0 4px;
+    line-height: 16px;
+    background-color: #c24259;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+}
+.ico-active .ico-d-4-3 {
+    border-width: 4px 3px;
+    border-style: solid;
+    border-color: #c24259 transparent transparent;
+    display: inline-block;
+    height: 0;
+    line-height: 0;
+    width: 0;
+    position: absolute;
+    bottom: -8px;
+    left: 12px;
+}
+.da-cart .cart-list .td-check {
+    width: 52px;
+    text-align: center;
+}
+.da-cart .cart-list .td {
+    padding-top: 20px;
+}
+.da-cart .cart-table li {
+    float: left;
+}
+.da-cart .cart-list .td-good {
+    width: 486px;
+    position: relative;
+}
+.da-cart .cart-list .td-good a {
+    float: left;
+}
+.da-cart .cart-list .td-good .img {
+    width: 78px;
+    height: 78px;
+    float: left;
+    border: 1px solid #e5e5e5;
+    margin-right: 20px;
+    background-position: center center;
+    background-size: cover;
+}
+.cover-img {
+    background-position: center center;
+    background-size: cover;
+}
+.da-cart .cart-list .td-good .name {
+    line-height: 20px;
+    overflow: hidden;
+    float: none;
+}
+.da-cart .cart-list .td-good .title {
+    line-height: 20px;
+    overflow: hidden;
+}
+.da-cart .cart-list .td-price {
+    width: 120px;
+    text-align: center;
+}
+.da-cart .cart-list .td-price .price, .da-cart .cart-list .td-total .total {
+    font-size: 16px;
+}
+.f1{
+	float: left;
+}
+.da-cart .cart-list .td-number {
+    width: 98px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.da-cart .cart-list .td-number .btn-number {
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    line-height: 28px;
+    border: 1px solid #e5e5e5;
+    border-right: none 0;
+    display: block;
+    margin-right: 0;
+}
+.ico-reduce {
+    background: url(../images/ico_symbol.png) -3px -22px no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    width: 12px;
+    height: 2px;
+}
+.da-cart .cart-list .td-number .number-in {
+    width: 38px;
+    height: 28px;
+    text-align: center;
+    line-height: 28px;
+    padding: 0;
+    float: left;
+    border: 1px solid #e5e5e5;
+}
+.da-cart .cart-list .td-number .btn-add {
+    border-right: solid 1px #e5e5e5;
+    border-left: none 0;
+}
+.ico-add {
+    background: url(../images/ico_symbol.png) -24px -17px no-repeat;
+    width: 12px;
+    height: 12px;
+}
+.ico-add, .ico-clock {
+    vertical-align: middle;
+    display: inline-block;
+    margin-top: -2px;
+}
+.da-cart .cart-list .td-total {
+    color: #e14958;
+    text-align: center;
+    width: 128px;
+}
+.da-cart .cart-list .td-handle {
+    text-align: center;
+    overflow: hidden;
+    float: none;
+    line-height: 20px;
+}
+/*---------总计------*/
+.da-cart .total-box {
+    height: 58px;
+    border: 1px solid #ccc;
+    width: 1018px;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+}
+.da-cart .total-box .sel-all {
+    width: 100px;
+    float: left;
+    padding-top: 22px;
+}
+.da-cart .total-box .sel-all input {
+    vertical-align: middle;
+    margin: -2px 16px 0 18px;
+}
+.da-cart .total-box .option {
+    padding-top: 22px;
+    float: left;
+}
+.da-cart .total-box .option a {
+    margin-right: 40px;
+}
+.da-cart .total-box .toolbar {
+    float: right;
+    width: 590px;
+}
+.da-cart .total-box .toolbar .btn-count {
+    float: right;
+    width: 120px;
+    background-color: #f25e5a;
+    text-align: center;
+    line-height: 60px;
+    margin-top: -1px;
+    margin-right: -1px;
+    font-size: 18px;
+    color: #fff;
+}
+.da-cart .total-box .toolbar .total-count {
+    float: right;
+    padding-right: 18px;
+    padding-top: 10px;
+    line-height: 20px;
+}
+.da-cart .total-box .toolbar .total-count .item {
+    float: left;
+    width: 140px;
+    text-align: right;
+}
+.da-cart .total-box .toolbar .total-count .sumprice {
+    display: inline-block;
+}
+.f20 {
+    font-size: 20px;
+}
+.da-cart .total-box .toolbar .ammount {
+    float: right;
+    padding-right: 32px;
+    padding-top: 12px;
+}
+.rede1 {
+    color: #e14958;
+}
+/*吸顶效果*/
+.da-cart .floating {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    border-top: solid 1px #999;
+    background-color: #f2f2f2;
+    z-index: 100;
+}
+
+/*-----------我的收藏-----*/
+.da-cart .cart-collection {
+    padding-top: 46px;
+    padding-left: 20px;
+}
+.da-cart .cart-collection .title {
+    width: 142px;
+    font-size: 14px;
+    border-top: dotted 1px #ccc;
+    margin: 0 auto;
+}
+.da-cart .cart-collection .title p {
+    background-color: #fff;
+    width: 80px;
+    margin: -12px auto 0;
+    text-align: center;
+}
+/*收藏为空*/
+.da-cart .cart-collection .data-empty1 {
+    width: auto;
+    height: 60px;
+    margin: 18px auto 0;
+}
+.da-cart .cart-collection .data-empty1 td {
+    padding: 10px 0;
+    font-size: 16px;
+}
+.da-cart .cart-collection .data-empty1 td {
+    padding: 10px 0;
+    font-size: 16px;
+}
+.da-cart .cart-collection .data-empty1 td a {
+    color: #5858d7;
+    font-size: 14px;
+    text-decoration: underline;
+}
+/*收藏不为空*/
+.da-cart .cart-collection .c-box {
+    position: relative;
+    padding: 26px 24px 0;
+}
+.da-cart .cart-collection .c-box .btn-pre {
+    left: 0;
+}
+.da-cart .cart-collection .c-box .arrow {
+    background: url(../images/ico_arrow.png) 0 -30px no-repeat;
+    vertical-align: middle;
+    position: absolute;
+    width: 24px;
+    height: 42px;
+    display: inline-block;
+    top: 98px;
+}
+.da-cart .cart-collection .c-box .btn-next {
+    background-position: -47px -30px;
+    right: 32px;
+}
+.da-cart .c-box .c-list {
+    padding: 0 20px;
+    width: 895px;
+	height: 268px;
+	overflow: hidden;
+}
+.da-cart .c-box .c-list ul{
+	height:268px;
+	width: 2000px;
+	overflow: hidden;
+}
+.da-cart .c-box .c-list li.active {
+    display: block;
+}
+.da-cart .c-box .c-list li {
+    float: left;
+    padding: 19px 16px;
+    border: 1px solid #fff;
+    width: 146px;
+    display: none;
+}
+.da-cart .c-box .c-list li .img-ct {
+    width: 140px;
+    height: 140px;
+    display: block;
+    margin: 0 auto 4px;
+}
+.da-cart .c-box .c-list li .img-ct img{
+    width: 140px;
+    height: 140px;
+ }
+.da-cart .c-box .c-list li:hover{
+	border: 1px solid #666;
+}
+.da-cart .c-box .c-list li .old-price {
+    text-decoration: line-through;
+    padding-left: 10px;
+}
+.da-cart .c-box .c-list li .goods-title {
+    width: 146px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.da-cart .c-box .c-list li .btn-cart {
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #e14958;
+    color: #fff;
+    font-size: 14px;
+    display: block;
+    margin: 20px auto 0;
+}
+
+/*-----------点删除后弹出框---------*/
+.da-dialog {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 200;
+}
+.da-dialog .da-dialog-inner {
+    position: fixed;
+    padding: 20px 30px;
+    border: 2px solid #5C5C5C;
+    background: #fff;
+    z-index: 202;
+    top: 50%;
+    left: 50%;
+    width: 328px;
+    height: 162px;
+    text-align: center;
+}
+.da-dialog .mask {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .4;
+    filter: alpha(opacity=40);
+}
+.da-dialog .close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url(../images/login-close.png);
+}
+.da-dialog-prompt .message {
+    margin: 30px 0;
+    text-align: center;
+}
+.da-dialog-prompt .cancel {
+    color: #e14958;
+    background: #fff;
+    border: 2px solid #e14958;
+    margin-right: 12px;
+}
+.da-dialog-prompt .cancel, .da-dialog-prompt .confirm {
+    padding: 10px 36px;
+    font-size: 12px;
+    font-weight: 700;
+}
+.da-dialog-prompt .confirm {
+    color: #fff;
+    background: #e14958;
+    border: 2px solid #e14958;
+}
+
+
+
+
+

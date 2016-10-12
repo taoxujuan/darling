@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/dingdan.css" />
+	</head>
+
+	<body>
+		<!-- 头部 -->
+		<div class="da-header">
+			<div class="da-header-inner">
+				<a href="">消费者告知书</a>
+				<div class="da-header-user">
+					<div class="da-reg-tip">
+						<a class="regtip-close"></a>
+					</div>
+					<a href="login.html" class="da-login">登录</a>
+					<span class="line">|</span>
+					<a href="login.html" class="da-register">注册</a>
+					<span>
+					<span class="line">|</span>
+					<span class="ico-phone"></span> 400-080-1888
+					</span>
+					<span class="line">|</span>
+					<a href="javascript:;" class="d-da">
+						下载达令app
+						<div class="da-code">
+							<span class="arrow-7-5"></span>
+							<span class="pic-code"></span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!--版心-->
+		<div class="da-checkout">
+			<div class="check-top clearfix">
+				<a class="logo" href="/"></a>
+				<div class="cart-step clearfix">
+					<ul>
+						<li class="step-1 c-pre">
+							<span class="triangle"></span>
+							<span class="icon-number">1</span> 查看购物车0
+						</li>
+						<li class="step-2 current">
+							<span class="triangle"></span>
+							<span class="icon-number">2</span> 确认订单信息
+						</li>
+						<li class="step-3">
+							<span class="triangle"></span>
+							<span class="icon-number">3</span> 成功提交订单
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="checkout-title">填写核对订单信息</div>
+			<!--主体部分-->
+			<div class="checkout-main">
+				<!--买家信息-->
+				<div class="checkout-buyer">
+					<div class="title clearfix">
+						<div class="buyer-option">
+							<a href="javascript:;" style="display: none;" class="toggole-address clearfix">
+								<P>
+									<span class="text">展开收货地址</span>
+									<span class="ico-d-4-3"></span>
+								</P>
+							</a>
+							<a href="javascript:;" class="add-address">
+								<span class="ico-add"></span> 使用新地址
+							</a>
+						</div>
+						收货人信息
+					</div>
+					<div class="buyer-info clearfix">
+						<ul></ul>
+					</div>
+					<!--弹出框-->
+					<div class="da-dialog address-dialog">
+						<div class="mask"></div>
+						<div class="da-dialog-inner have-title" style="margin-top:-160.5px;margin-left:-298px">
+							<div class="da-dialog-title">
+								<a href="javascript:;" class="close"></a>
+								<p>使用新地址</p>
+							</div>
+							<form class="address-form">
+								<input type="hidden" class="number-input158" name="addr_id" />
+								<input type="hidden" class="number-input58" name="region_name" value="北京市-北京市-东城区" />
+								<div class="address-form-body">
+									<ul>
+										<li>
+											<label class=" ctrl consignee">
+							                    <span class="item">*收件人：</span>
+							                    <input type="text" class="input158 error" name="consignee" aria-required="true"><label id="consignee-error" class="error" for="consignee">请输入收货人姓名</label>
+											</label>
+											<label class=" id-card ctrl" data-id-card="">
+							                    <span class="item">身份证号：</span>
+							                    <input type="text" class="input158 valid" name="Id_card">
+							                </label>
+										</li>
+										<li>
+											<span class="item">*收货地址：</span>
+											<span class="data ctrl region">
+												<select data-region-province="">
+													<option value="11">北京市</option>
+													<option value="12">天津市</option>
+													<option value="13">河北省</option>
+													<option value="14">山西省</option>
+													<option value="15">内蒙古自治区</option>
+													<option value="21">辽宁省</option>
+													<option value="22">吉林省</option>
+													<option value="23">黑龙江省</option>
+													<option value="31">上海市</option>
+													<option value="32">江苏省</option>
+													<option value="33">浙江省</option>
+													<option value="34">安徽省</option>
+													<option value="35">福建省</option>
+													<option value="36">江西省</option>
+													<option value="37">山东省</option>
+													<option value="41">河南省</option>
+													<option value="42">湖北省</option>
+													<option value="43">湖南省</option>
+													<option value="44">广东省</option>
+													<option value="45">广西壮族自治区</option>
+													<option value="46">海南省</option>
+													<option value="50">重庆市</option>
+													<option value="51">四川省</option>
+													<option value="52">贵州省</option>
+													<option value="53">云南省</option>
+													<option value="54">西藏自治区</option>
+													<option value="61">陕西省</option>
+													<option value="62">甘肃省</option>
+													<option value="63">青海省</option>
+													<option value="64">宁夏回族自治区</option>
+													<option value="65">新疆维吾尔自治区</option>
+												</select>
+												<select data-region-city="">
+													<option value="1101">北京市</option>
+												</select>
+												<select data-region-district="">
+													<option value="110101">东城区</option>
+													<option value="110102">西城区</option>
+													<option value="110105">朝阳区</option>
+													<option value="110106">丰台区</option>
+													<option value="110107">石景山区</option>
+													<option value="110108">海淀区</option>
+													<option value="110109">门头沟区</option>
+													<option value="110111">房山区</option>
+													<option value="110112">通州区</option>
+													<option value="110113">顺义区</option>
+													<option value="110114">昌平区</option>
+													<option value="110115">大兴区</option>
+													<option value="110116">怀柔区</option>
+													<option value="110117">平谷区</option>
+													<option value="110228">密云县</option>
+													<option value="110229">延庆县</option>
+												</select>
+											</span>
+										</li>
+										<li>
+											<label class="ctrl detail">
+                    							<span class="item">*详细地址：</span>
+                    							<span class="data">
+                                                	<input type="text" class="input438 error" name="address">
+                                                	<label id="address-error" class="error" for="address">请输入详细街道地址</label>
+											</span>
+											</label>
+										</li>
+										<li>
+											<label class="ctrl phone-mob">
+							                    <span class="item">*手机号码：</span>
+							                    <span class="data">
+							                        <input type="text" class="input158 error" name="phone_mob">
+							                        <label id="phone_mob-error" class="error" for="phone_mob">请输入收货人手机</label>
+											</span>
+											</label>
+										</li>
+									</ul>
+								</div>
+							</form>
+							<div class="btn-area">
+								<button class="button-cancel" type="button">取消</button>
+								<button class="button-sure" type="submit">确定</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!--订单信息-->
+				<div class="checkout-items">
+					<div class="checkout-order">
+						<div class="title">订单商品信息</div>
+						<div class="order-table">
+							<ul class="thead clearfix">
+								<li class="th item">
+									<p>商品名称</p>
+								</li>
+								<li class="th price">
+									<p>单价(元)</p>
+								</li>
+								<li class="th number">
+									<p>数量</p>
+								</li>
+								<li class="th total">
+									<p>小计(元)</p>
+								</li>
+							</ul>
+							<ul class="tr clearfix"></ul>
+							<div class="order-sum clearfix"></div>
+						</div>
+					</div>
+					<!--使用优惠券-->
+					<div class="coupon-card"></div>
+					<div class="checkout-pay"></div>
+				</div>
+				
+			</div>
+			<!--结算-->
+				<div class="checkout-result"></div>
+			<!-- footer 尾部 -->
+			<div class="da-footer">
+				<div class="da-assure">
+					<ul class="clearfix">
+						<li>为什么选择达令<span class="ico-arrow"></span></li>
+						<li><span class="assure-1"></span>100多个品牌授权</li>
+						<li><span class="assure-2"></span>24小时内发货</li>
+						<li><span class="assure-3"></span>保税区正品</li>
+					</ul>
+				</div>
+				<div class="da-investor clearfix">
+					<dl class="first">
+						<dt>投资人说达令</dt>
+						<dd>“hi，达令，我是鹿晗，达令投资人，投资比影响力更重要的是责任。”</dd>
+					</dl>
+					<dl class="second">
+						<dt>投资人说达令</dt>
+						<dd>“达令™一手全球好货--带您购全球,教您神马值得买。<br> 连续两年荣获App store 编辑推荐最佳购物类应用！”
+						</dd>
+					</dl>
+				</div>
+				<div class="da-copyright">
+					<p class="f14">
+						<a href="/" target="_blank">首页</a> │
+						<a href="" target="_blank">网站地图</a> │
+						<a href="" target="_blank">消费者告知书</a> │
+						<a href="" target="_blank">优惠券使用规则</a> │
+						<a href="" target="_blank">退换货使用说明</a> │
+						<a href="" target="_blank">关于我们</a> │
+						<a href="" target="_blank">联系我们</a>
+					</p>
+					<table cellpadding="0" cellspacing="0" class="f14">
+						<tbody>
+							<tr>
+								<td align="right" width="170">北京普缇客科技有限公司&nbsp;</td>
+								<td align="left">&nbsp;
+									<a id="___szfw_logo___" href="" target="_blank">
+										<img src="../images/foot1.png" border="0"></a>
+									<span style="display:inline-block;position:relative;width:auto;">
+                    		<a href="" id="kx_verify" style="display:inline-block;">
+                    		<img src="../images/foot2.png" style="border:none;"></a>
+                    		</span>
+									<span></span>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<p class="f14">Copyright © 2016达令 ，All Rights Reserved │ 京ICP备14009583号-1 │ 京公网安备11010502027399 | 食品流通许可证编号：SP1101051510323113 </p>
+				</div>
+			</div>
+
+			<script type="text/javascript" src="../js/jquery-1.12.4.js"></script>
+			<script type="text/javascript" src="../js/jquery.cookie.js"></script>
+			<script type="text/javascript" src="../js/common.js"></script>
+
+	</body>
+
+</html>

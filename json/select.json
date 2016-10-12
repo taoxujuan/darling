@@ -1,0 +1,78 @@
+[
+	{"title":"达令力荐",
+	"list":[
+		{"text":"告别干燥深补水"},{"text":"轻松卸妆神器"},{"text":"清新女神妆"},{"text":"晒不黑的秘密"}
+	
+	],
+	"label":[
+		{"desc":"告别干燥深补水"},{"desc":"轻松卸妆神器"},{"desc":"清新女神妆"},{"desc":"晒不黑的秘密"}
+	],
+	"mulhide":"visibility: block;",
+	"morehide":"visibility: hidden;"
+	},
+	{"title":"分类",
+	"list":[
+		{"text":"个护保健"},{"text":"彩妆香氛"},{"text":"面部护肤"}
+	
+	],
+	"label":[
+	],
+	"mulhide":"visibility: hidden;",
+	"morehide":"visibility: hidden;"
+	},
+	{"title":"功效",
+	"list":[
+		{"text":"花香调"},{"text":"抗皱"},{"text":"香气持久"},{"text":"淡化唇色"},
+		{"text":"深层洁净"},{"text":"遮瑕"},{"text":"清新"},{"text":"去黑头"},
+		{"text":"提亮肤色"}
+	],
+	"label":[
+		{"desc":"花香调"},{"desc":"抗皱"},{"desc":"香气持久"},{"desc":"淡化唇色"},
+		{"desc":"深层洁净"},{"desc":"遮瑕"},{"desc":"清新"},{"desc":"去黑头"},
+		{"desc":"提亮肤色"}
+	],
+	"mulhide":"visibility: block;",
+	"morehide":"visibility: block;"
+	},
+	{"title":"地区",
+	"list":[
+		{"text":"韩国"},{"text":"日本"},{"text":"欧美"},{"text":"港台"},
+		{"text":"东南亚"}
+	],
+	"label":[
+		{"desc":"韩国"},{"desc":"日本"},{"desc":"欧美"},{"desc":"港台"},
+		{"desc":"东南亚"}
+	],
+	"mulhide":"visibility: block;",
+	"morehide":"visibility: hidden;"
+	},
+	{"title":"品牌",
+	"list":[
+		{"text":"Innisfree"},{"text":"the saem"},{"text":"Shiseido资生堂"},{"text":"Revlon"},
+		{"text":"3CE"},{"text":"skin Food"},{"text":"ETUDE HOUSE"},{"text":"科颜氏"},
+		{"text":"Estee Lauder"},{"text":"Innisfree"},{"text":"the saem"},{"text":"Shiseido资生堂"},{"text":"Revlon"},
+		{"text":"3CE"},{"text":"skin Food"},{"text":"ETUDE HOUSE"},{"text":"科颜氏"},
+		{"text":"Estee Lauder"}
+	],
+	"label":[
+		{"desc":"Innisfree"},{"desc":"the saem"},{"desc":"Shiseido资生堂"},{"desc":"Revlon"},
+		{"desc":"3CE"},{"desc":"skin Food"},{"desc":"ETUDE HOUSE"},{"desc":"科颜氏"},
+		{"desc":"Estee Lauder"},{"desc":"Innisfree"},{"desc":"the saem"},{"desc":"Shiseido资生堂"},{"desc":"Revlon"},
+		{"desc":"3CE"},{"desc":"skin Food"},{"desc":"ETUDE HOUSE"},{"desc":"科颜氏"},
+		{"desc":"Estee Lauder"}
+	],
+	"mulhide":"visibility: block;",
+	"morehide":"visibility: block;"
+	},
+	{"title":"价格",
+	"list":[
+		{"text":"0-50"},{"text":"50-100"},{"text":"100-500"},{"text":"500以上"}
+	],
+	"label":[
+		{"desc":"0-50"},{"desc":"50-100"},{"desc":"100-500"},{"desc":"500以上"}
+	],
+	"mulhide":"visibility: block;",
+	"morehide":"visibility: hidden;"
+	}
+	
+]
